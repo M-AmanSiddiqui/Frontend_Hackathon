@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router";
-import Login from "./Components/Login";
-import Signup from "./Components/Signup";
+import Navbar from "./Components/Navbar";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import { useEffect} from "react";
 const root = document.getElementById("root");
 function ScrollToTop() {
@@ -18,10 +20,12 @@ ReactDOM.createRoot(root).render(
   <BrowserRouter>
 <ScrollToTop />
     <Routes>
-    <Route path="/" element={<Login />} />
-    <Route path="/signup" element={<Signup />} />
-     
+    <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
     </Routes>
   </BrowserRouter>
 );
 export default App;
+
+
