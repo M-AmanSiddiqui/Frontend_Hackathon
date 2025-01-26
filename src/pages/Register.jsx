@@ -1,44 +1,60 @@
-// src/pages/Register.jsx
-import React, { useState } from "react";
-
-const Register = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log({ name, email, password }); // Integrate API here
-  };
-
+import React from 'react'
+import { Link } from 'react-router-dom'
+ function Register() {
   return (
-    <div className="p-8 max-w-md mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Register</h1>
-      <form onSubmit={handleSubmit}>
-        <label>Name:</label>
-        <input
-          type="text"
-          className="block w-full p-2 border mt-2 mb-4"
-          onChange={(e) => setName(e.target.value)}
-        />
-        <label>Email:</label>
-        <input
-          type="email"
-          className="block w-full p-2 border mt-2 mb-4"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <label>Password:</label>
-        <input
-          type="password"
-          className="block w-full p-2 border mt-2 mb-4"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button className="bg-blue-500 text-white px-4 py-2 rounded" type="submit">
-          Register
-        </button>
-      </form>
+    <div>  
+          <div className="flex h-screen items-center justify-center bg-gray-200">
+      <div className="w-full max-w-md p-8 bg-black text-white rounded-lg shadow-lg">
+        <h2 className="text-2xl font-bold mb-4 text-center">Create an account</h2>
+       
+        <form>
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-sm mb-1">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="m@example.com"
+              className="w-full px-4 py-2 rounded bg-black text-gray-200 border border-gray-600 focus:outline-none "
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="password" className="block text-sm mb-1">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              className="w-full px-4 py-2 rounded bg-black text-gray-200 border border-gray-600 focus:outline-none "
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="confirm-password" className="block text-sm mb-1">
+              Confirm Password
+            </label>
+            <input
+              type="password"
+              id="confirm-password"
+              className="w-full px-4 py-2 rounded bg-black text-gray-200 border border-gray-600 focus:outline-none"
+            />
+          </div>
+          <button
+            type="submit"
+            className="w-full py-2 px-4  text-black bg-white font-semibold rounded transition"
+          >
+            Sign Up
+          </button>
+        </form>
+        <p className="text-center text-white mt-6">
+          Already have an account?{" "}
+          <Link to="/login" className="text-white hover:underline">
+            Login
+          </Link>
+        </p>
+      </div>
     </div>
-  );
-};
-
-export default Register;
+    </div>
+  )
+}
+export default Register

@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router";
-import Navbar from "./Components/Navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import { useEffect} from "react";
+import WeddingLoan from "./pages/WeddingLoans";
+import HomeConstruction from "./pages/HomeConstruction";
+import Business from "./pages/Business";
+import Education from "./pages/Education";
 const root = document.getElementById("root");
 function ScrollToTop() {
  const location = useLocation();
@@ -21,6 +24,10 @@ ReactDOM.createRoot(root).render(
 <ScrollToTop />
     <Routes>
     <Route path="/" element={<Home />} />
+    <Route path="/education" element={<Education />} />
+    <Route path="/weddingloan" element={<WeddingLoan />} />
+    <Route path="/homeconstruction" element={<HomeConstruction />} />
+     <Route path="/business" element={<Business />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
     </Routes>
