@@ -21,7 +21,7 @@ const Cards = () => {
             Saylani Microfinance offers financial assistance for weddings, ensuring a smooth start for couples by covering essential wedding expenses.
           </p>
           <Link to="/WeddingLoan">
-            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+            <button className="mt-4 bg-[#8EC741] text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
               Explore Now
             </button>
           </Link>
@@ -41,7 +41,7 @@ const Cards = () => {
             Build your dream home with our Home Construction Loans, designed to support low-income families in achieving housing stability.
           </p>
           <Link to="/HomeConstruction">
-          <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+          <button className="mt-4 bg-[#8EC741] text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
             Explore Now
           </button></Link>
         </div>
@@ -60,7 +60,7 @@ const Cards = () => {
             Empowering entrepreneurs with interest-free loans to start or grow their small businesses, fostering financial independence.
           </p>
           <Link to="/Business">
-          <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+          <button className="mt-4 bg-[#8EC741] text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
             Explore Now
           </button></Link>
         </div>
@@ -79,7 +79,7 @@ const Cards = () => {
             Our Education Loans provide support to students pursuing higher education, ensuring that financial constraints don't hinder their dreams.
           </p>
           <Link to="/Education">
-          <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+          <button className="mt-4 bg-[#8EC741] text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
             Explore Now
           </button></Link>
         </div>

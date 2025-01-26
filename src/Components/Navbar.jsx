@@ -66,32 +66,32 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow-lg z-10">
 
-<div className="flex items-center justify-between bg-gray-100 p-4 rounded-lg shadow-md">
+<div className="flex items-center justify-between bg-[#8EC741] text-white p-4 rounded-lg shadow-md">
   {/* Left Content */}
   <div className="flex items-center space-x-8">
     <div className="flex items-center space-x-2">
-      <FiMail className="text-gray-600" />
+      <FiMail className="text-white" />
       <Link
         to="mailto:info@SaylaniWelfareUSA.com"
-        className="text-gray-800 hover:text-blue-600"
+        className="text-white hover:text-blue-600"
       >
         info@SaylaniWelfareUSA.com
       </Link>
     </div>
     <div className="flex items-center space-x-2">
-      <FiPhone className="text-gray-600" />
+      <FiPhone className="text-white" />
       <Link
         to="tel:8337860999"
-        className="text-gray-800 hover:text-blue-600"
+        className="text-white hover:text-blue-600"
       >
         833-786-0999
       </Link>
     </div>
     <div className="flex items-center space-x-2">
-      <BsGlobe className="text-gray-600" />
+      <BsGlobe className="text-white" />
       <Link
         to="tel:+923331201585"
-        className="text-gray-800 hover:text-blue-600"
+        className="text-white hover:text-blue-600"
       >
         +923331201585
       </Link>
@@ -101,7 +101,7 @@ const Navbar = () => {
   {/* Right Button */}
   <Link
     to="/Login"
-    className="bg- text-gray-800 bg-gray-200 px-4 py-1 rounded-md hover:bg-black hover:text-white"
+    className="bg- text-white bg-blue-500 px-4 py-1 rounded-md  "
   >
     Login
   </Link>
