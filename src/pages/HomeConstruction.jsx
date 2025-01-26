@@ -11,7 +11,7 @@ const HomeConstruction = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       <Navbar />
-      <header className="bg-[#8EC741] text-white py-6 text-center mt-44">
+      <header className="bg-[#8EC741] text-white py-6 text-center mt-48">
        <h1 className="text-3xl font-semibold">Home Construction Loan</h1>
          <p className="mt-2">Building your dream home made affordable</p>
        </header> 

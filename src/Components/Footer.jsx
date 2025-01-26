@@ -1,11 +1,9 @@
 import React from "react";
 import logo from "../assets/images/logo.png"
-import {
-    FaFacebookF,
-    FaTwitter,
-    FaYoutube,
-    FaWhatsapp,
-  } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
+
+
 
 const Footer = () => {
   return (
@@ -20,34 +18,18 @@ const Footer = () => {
             className="mb-4 w-36"
           />
           <div className="flex space-x-3">
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="p-2 bg-blue-600 rounded-full hover:bg-blue-700 transition transform hover:scale-110"
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              href="#"
-              aria-label="Twitter"
-              className="p-2 bg-black rounded-full hover:bg-gray-900 transition transform hover:scale-110"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="#"
-              aria-label="YouTube"
-              className="p-2 bg-red-600 rounded-full hover:bg-red-700 transition transform hover:scale-110"
-            >
-              <FaYoutube />
-            </a>
-            <a
-              href="#"
-              aria-label="WhatsApp"
-              className="p-2 bg-green-500 rounded-full hover:bg-green-600 transition transform hover:scale-110"
-            >
-              <FaWhatsapp />
-            </a>
+          <Link to="https://www.facebook.com/saylani.smit/" target="_blank">
+            <FaFacebookF className="text-blue-700" />
+          </Link>
+          <Link to="https://www.youtube.com/@SaylaniWelfareTrustOfficial" target="_blank">
+            <FaYoutube className="text-red-600" />
+          </Link>
+          <Link to="https://pk.linkedin.com/company/saylanimasstraining" target="_blank">
+            <FaLinkedinIn className="text-blue-500" />
+          </Link>
+          <Link to="https://www.instagram.com/officialswit/?hl=en" target="_blank">
+            <FaInstagram className="text-pink-600" />
+          </Link>
           </div>
         </div>
 
